@@ -1,22 +1,6 @@
+use name HH\Lib\IO;
 
-:::info[Note]
-This is a point-in-time snapshot of the API documentation from January 2026.
-Going forward, we will not be maintaining a public copy of these references,
-and recommend users to refer to the built-in signature helpers available in
-the Hack LSP instead for complete and up-to-date information.
-:::
-
-``` Hack
-public function getFileDescriptor(): HH\Lib\OS\FileDescriptor;
-```
-
-
-
-
-## Returns
-
-
-
-
-+ [` HH\Lib\OS\FileDescriptor `](/apis/Classes/HH.Lib.OS/FileDescriptor/)
-<!-- HHAPIDOC -->
+<<__EntryPoint>>
+async function main(): Awaitable<void> {
+ await IO\request_output()->writeAllAsync("Hello World!\n");
+ }
